@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBN04JQ-2xfpekn4Gcsr_nGJi4EX4xx8b0",
-    authDomain: "longest33-f7db3.firebaseapp.com",
-    databaseURL: "https://longest33-f7db3-default-rtdb.firebaseio.com",
-    projectId: "longest33-f7db3",
-    storageBucket: "longest33-f7db3.appspot.com",
-    messagingSenderId: "995514543944",
-    appId: "1:995514543944:web:ab5b3b9904dd78c1f50d7d"
+   apiKey: "AIzaSyAAWizPgJZnUIr_8uqaF3ZMAnEq74bX2xg",
+  authDomain: "itsapp-4.firebaseapp.com",
+  databaseURL: "https://itsapp-4-default-rtdb.firebaseio.com",
+  projectId: "itsapp-4",
+  storageBucket: "itsapp-4.appspot.com",
+  messagingSenderId: "459021400781",
+  appId: "1:459021400781:web:ba0b58975f11e0e278c784"
  
   };
 
